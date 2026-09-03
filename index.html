@@ -1,28 +1,386 @@
-<h1>Luke Cook</h1>
-<br>
-Political Science Major
-University of Utah
-<br>
-<h1>About Me</h1>
-My name is Luke Cook. I enjoy being in the outdoors and golfing. I just recently picked up a new hobby of fly fishing. I want to graduate with my bacholers degree in political science and then go to BYU law school. Eventually I want to become a patent lawyer and help people with new ideas. I enjoy spending time with my family aswell.
-<br>
-<h1>Skills</h1>
-<br>
-Microsoft       Excel
-<br>
-Data            Analysis
-<br>
-One             Drive Research
-<br>
-AI              Analysis
-<br>
-<h2>Projects  &nbsp;  &nbsp;  &nbsp;  &nbsp; Description</h2>
-AI Business Analysis     &nbsp;  &nbsp;  &nbsp;  &nbsp;    Analyze Business data using ChatGpt
-<br>
-Data Visualization  &nbsp;  &nbsp;  &nbsp;  &nbsp;    Dashboard built with tableau
-<br>
-Web Development  &nbsp;  &nbsp;  &nbsp;  &nbsp; Responsive Bootstrap Website
-<br>
-Process Improvement  &nbsp;  &nbsp;  &nbsp;  &nbsp;  AI-assisted business workflow redesign
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luke Cook | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1f3c5c;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #294f75;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Main Sections */
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 35px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #1f3c5c;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        /* About */
+        #about p {
+            font-size: 17px;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: #e9eef3;
+            padding: 12px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .project-card h3 {
+            color: #294f75;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            margin-bottom: 10px;
+        }
+
+        .project-card span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Resume */
+        .resume-button {
+            display: inline-block;
+            background-color: #294f75;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .resume-button:hover {
+            background-color: #1f3c5c;
+        }
+
+        /* Contact */
+        #contact a {
+            color: #294f75;
+        }
+
+        #contact p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f3c5c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Mobile Design */
+        @media (max-width: 600px) {
+
+            nav ul {
+                gap: 12px;
+            }
+
+            header {
+                padding: 50px 15px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header h2 {
+                font-size: 19px;
+            }
+
+            section {
+                margin: 15px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Header -->
+    <header>
+        <h1>Luke Cook</h1>
+        <h2>Finance & Information Systems Student</h2>
+        <p>University of Utah</p>
+    </header>
+
+
+    <!-- About Me -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            My name is Luke Cook. I am a political science major here at
+            the University of Utah. In my free time I enjoy golfing and fly
+            fishing. I love to spend time with my family, friends, and girlfriend.
+            I hope to go to BYU law school and eventually get mty JD. I love my
+            IS 3060 class. 
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Microsoft Excel</li>
+            <li>Data Analytics</li>
+            <li>AI Prompt Engineering</li>
+            <li>Business Analysis</li>
+            <li>Project Management</li>
+            <li>Financial Analysis</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>AI Business Analysis</h3>
+
+                <p>
+                    Analyze business data and generate insights using
+                    artificial intelligence tools such as ChatGPT.
+                </p>
+
+                <span>Project coming soon</span>
+            </div>
+
+
+            <div class="project-card">
+                <h3>Data Visualization</h3>
+
+                <p>
+                    Create visualizations and dashboards that help explain
+                    business data and performance.
+                </p>
+
+                <span>Project coming soon</span>
+            </div>
+
+
+            <div class="project-card">
+                <h3>Web Development</h3>
+
+                <p>
+                    Build a responsive website using HTML, CSS, GitHub,
+                    and GitHub Pages.
+                </p>
+
+                <span>Project coming soon</span>
+            </div>
+
+
+            <div class="project-card">
+                <h3>Process Improvement</h3>
+
+                <p>
+                    Use technology and AI to evaluate and improve a
+                    business process.
+                </p>
+
+                <span>Project coming soon</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Resume -->
+    <section id="resume">
+
+        <h2>Resume</h2>
+
+        <p>
+            My professional resume will be available here.
+        </p>
+
+        <br>
+
+        <p><strong>Resume coming soon</strong></p>
+
+        <!--
+        WHEN YOU ADD YOUR RESUME:
+
+        1. Upload your PDF resume to your GitHub repository.
+        2. Name it resume.pdf
+        3. Delete "Resume coming soon" above.
+        4. Remove the comment symbols around the link below.
+
+        <a href="resume.pdf"
+           class="resume-button"
+           target="_blank">
+           Download My Resume
+        </a>
+        -->
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            <strong>University Email:</strong>
+            YOUR-UNIVERSITY-EMAIL-HERE
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="YOUR-GITHUB-PROFILE-LINK"
+               target="_blank">
+               View My GitHub Profile
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="YOUR-LINKEDIN-PROFILE-LINK"
+               target="_blank">
+               View My LinkedIn Profile
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Luke Cook | Professional Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
 
